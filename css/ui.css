@@ -20,6 +20,21 @@ body {
   margin: 0; }
 
 /* navbars */
+nav {
+  grid-column-start: 1;
+  grid-column-end: 13; }
+
+container nav ul {
+  display: inline-flex;
+  margin: 0;
+  list-style-type: none; }
+
+container nav ul li {
+  margin: 1rem; }
+
+container nav ul li a {
+  padding: 1rem; }
+
 /* panels */
 container section panel {
   grid-column-start: 1;
