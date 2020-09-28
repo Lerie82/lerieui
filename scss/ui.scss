@@ -1,0 +1,15 @@
+/*
+author	 Lerie Taylor
+date	09/2020
+what	this sass file processes the UI framework into the ui.css file
+*/
+
+/* grid variables */
+$cols: 12;
+$gutter: 0.5rem;
+
+/* htmldoc variables */
+$body-margin: 0;
+
+/* import all the sass */
+@import "colors","footers", "grid", "headers", "htmldoc", "navbars", "panels", "sections"
