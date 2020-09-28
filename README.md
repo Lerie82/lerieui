@@ -1,13 +1,13 @@
-==the grid==
+-- the grid
 the grid is a 12 column repeating grid
 
-===sections===
+--- sections
 sections are basically "sections" trhat you are filling with content.
 
 there are several helper classes available to align your content:
-	x. .two 
-	x. .three
-	x. .four
+	- .two 
+	- .three
+	- .four
 
-===panels===
+--- panels
 panels hold your content, panels belong inside of sections.
