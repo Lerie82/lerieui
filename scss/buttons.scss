@@ -1,0 +1,52 @@
+/* buttons */
+button {
+	margin:1rem;
+    padding: 0.5rem;
+    width: max-content;
+    border: 1px solid #dddddd;
+    border-radius: 0.3rem;
+}
+
+button.light {
+    background: #fdfdfd;
+    color: #9d9d9d;
+    border: 1px solid #eeeeee;
+}
+
+button.dark {background-color: #232323;color: #9c9c9c;border: 1px solid #9c9c9c;}
+
+body {
+}
+
+button.primary {
+    background-color: #ff0000;
+    color: #eeeeee;
+    border: 1px solid #ce0000;
+}
+
+button.secondary {
+    background-color: #00ff00;
+    border: 1px solid #00ce00;
+}
+
+button.accent {
+    background-color: #0000ff;
+    border: 1px solid #0000ce;
+    color: #eeeeee;
+}
+
+button.outline {
+    background: transparent;
+}
+
+button.outline.light {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+button.outline.dark {
+    background: transparent;
+    border: 1px solid #000000;
+    color: #000000;
+}

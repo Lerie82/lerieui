@@ -35,6 +35,14 @@ container nav ul li {
 container nav ul li a {
   padding: 1rem; }
 
+container nav.right {
+  justify-self: right; }
+
+container nav ul li.brand {
+  margin: 0;
+  padding: 1rem 0.5rem;
+  font-weight: bold; }
+
 /* panels */
 container section panel {
   grid-column-start: 1;
@@ -103,5 +111,56 @@ container section.four panel:nth-child(3) {
 container section.four panel:last-child {
   grid-column-start: 10;
   grid-column-end: 13; }
+
+/* buttons */
+button {
+  margin: 1rem;
+  padding: 0.5rem;
+  width: max-content;
+  border: 1px solid #dddddd;
+  border-radius: 0.3rem; }
+
+button.light {
+  background: #fdfdfd;
+  color: #9d9d9d;
+  border: 1px solid #eeeeee; }
+
+button.dark {
+  background-color: #232323;
+  color: #9c9c9c;
+  border: 1px solid #9c9c9c; }
+
+button.primary {
+  background-color: #ff0000;
+  color: #eeeeee;
+  border: 1px solid #ce0000; }
+
+button.secondary {
+  background-color: #00ff00;
+  border: 1px solid #00ce00; }
+
+button.accent {
+  background-color: #0000ff;
+  border: 1px solid #0000ce;
+  color: #eeeeee; }
+
+button.outline {
+  background: transparent; }
+
+button.outline.light {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff; }
+
+button.outline.dark {
+  background: transparent;
+  border: 1px solid #000000;
+  color: #000000; }
+
+/* forms */
+/* utilities/helpers/etc */
+span.bg-black {
+  background-color: #000000;
+  padding: 1rem; }
 
 /*# sourceMappingURL=ui.css.map */

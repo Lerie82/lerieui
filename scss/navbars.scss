@@ -22,3 +22,9 @@ container nav ul li a {
 container nav.right {
     justify-self: right;
 }
+
+container nav ul li.brand {
+    margin: 0;
+    padding: 1rem 0.5rem;
+    font-weight: bold;
+}
