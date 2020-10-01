@@ -1,0 +1,77 @@
+/* sections */
+container section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-start: 1;
+    grid-column-end: 13;
+    margin: 0rem $section-margin-right 0rem $section-margin-left;
+}
+
+/* two columns */
+container section.two {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+container section.two panel:first-child {
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+container section.two panel:last-child {
+    grid-column-start: 7;
+    grid-column-end: 13;
+}
+
+/* three columns */
+container section.three {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+container section.three panel:first-child {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+container section.three panel:nth-child(2) {
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+
+container section.three panel:last-child {
+    grid-column-start: 9;
+    grid-column-end: 13;
+}
+
+/* four columns */
+container section.four {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+container section.four panel:first-child {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+container section.four panel:nth-child(2) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+container section.four panel:nth-child(3) {
+    grid-column-start: 7;
+    grid-column-end: 10;
+}
+
+container section.four panel:last-child {
+    grid-column-start: 10;
+    grid-column-end: 13;
+}

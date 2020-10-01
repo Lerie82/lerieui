@@ -1,0 +1,28 @@
+/* heros */
+container hero {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    padding: 3rem;
+}
+
+container hero h1 {
+    font-size: 3.5rem;
+}
+
+container hero p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+container hero.dark {
+    background: #232323;
+}
+
+container hero.dark h1 {
+    color: #ffffff;
+}
+
+container hero.dark p {
+    color: #aaaaaa;
+}

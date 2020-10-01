@@ -1,0 +1,220 @@
+/*
+Author	 Lerie Taylor
+Date	09/2020
+What	this sass file processes the UI framework into the ui.css file
+*/
+/* import all the sass */
+/* colors */
+/* palettes */
+/* blue */
+/* grid variables */
+/* htmldoc variables */
+/* buttons */
+/* navbars */
+/* sections */
+/* footers */
+/* grid */
+@import url(../fonts/);
+container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.5rem; }
+
+/* headers */
+/* html document */
+body {
+  margin: 0;
+  font-family: "Roboto"; }
+
+/* navbars */
+nav {
+  grid-column-start: 1;
+  grid-column-end: 13; }
+
+container nav ul {
+  display: inline-flex;
+  margin: 0;
+  list-style-type: none; }
+
+container nav ul li {
+  margin: 1rem; }
+
+container nav ul li a {
+  padding: 1rem; }
+
+container nav.right {
+  justify-self: right; }
+
+container nav ul li.brand {
+  margin: 0;
+  padding: 1rem 0.5rem;
+  font-weight: bold; }
+
+container nav li a {
+  color: #232323;
+  text-decoration: none;
+  margin: -1rem; }
+
+container nav li a:hover {
+  background-color: #d5d5d5;
+  color: #3d3d3d; }
+
+/* dark navbar  */
+container nav.dark ul li a {
+  color: #eeeeee;
+  text-decoration: none;
+  border: 1px;
+  padding: repeater(1rem);
+  margin: -1rem; }
+
+container nav.dark ul li a:hover {
+  background-color: #303030;
+  color: #fbfbfb; }
+
+/* panels */
+container section panel {
+  grid-column-start: 1;
+  grid-column-end: 13; }
+
+/* sections */
+container section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-start: 1;
+  grid-column-end: 13;
+  margin: 0rem 3rem 0rem 3rem; }
+
+/* two columns */
+container section.two {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-template-columns: repeat(12, 1fr); }
+
+container section.two panel:first-child {
+  grid-column-start: 1;
+  grid-column-end: 7; }
+
+container section.two panel:last-child {
+  grid-column-start: 7;
+  grid-column-end: 13; }
+
+/* three columns */
+container section.three {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-template-columns: repeat(12, 1fr); }
+
+container section.three panel:first-child {
+  grid-column-start: 1;
+  grid-column-end: 5; }
+
+container section.three panel:nth-child(2) {
+  grid-column-start: 5;
+  grid-column-end: 9; }
+
+container section.three panel:last-child {
+  grid-column-start: 9;
+  grid-column-end: 13; }
+
+/* four columns */
+container section.four {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-template-columns: repeat(12, 1fr); }
+
+container section.four panel:first-child {
+  grid-column-start: 1;
+  grid-column-end: 4; }
+
+container section.four panel:nth-child(2) {
+  grid-column-start: 4;
+  grid-column-end: 7; }
+
+container section.four panel:nth-child(3) {
+  grid-column-start: 7;
+  grid-column-end: 10; }
+
+container section.four panel:last-child {
+  grid-column-start: 10;
+  grid-column-end: 13; }
+
+/* buttons */
+button {
+  padding: 0.5rem;
+  width: max-content;
+  border: 1px solid #d6d6d6;
+  color: #a3a3a3;
+  border-radius: 0.3rem;
+  box-shadow: 0px 0px 5px -4px #000, 0px 0px 4px -5px #555; }
+
+button.outline {
+  background-color: transparent; }
+
+button:hover {
+  background-color: #e1e1e1;
+  color: #303030; }
+
+/* light button */
+button.light {
+  background-color: #ffffff;
+  border: 1px solid #222222;
+  color: black; }
+
+button.light:hover {
+  background: #f7f7f7; }
+
+button.light.outline {
+  background-color: transparent; }
+
+/* dark button */
+button.dark {
+  color: #6f6f6f;
+  background-color: #303030;
+  border: 1px solid #303030;
+  box-shadow: 0px 0px 5px -4px #fff, 0px 0px 4px -5px #555; }
+
+button.dark:hover {
+  background-color: #afafaf;
+  color: #e1e1e1; }
+
+button.dark.outline {
+  background: transparent; }
+
+/* forms */
+/* utilities/helpers/etc */
+span.bg-black {
+  background-color: #000000;
+  padding: 1rem; }
+
+.center-text {
+  text-align: center; }
+
+/* heros */
+container hero {
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  padding: 3rem; }
+
+container hero h1 {
+  font-size: 3.5rem; }
+
+container hero p {
+  font-size: 1.2rem;
+  color: #cccccc; }
+
+container hero.dark {
+  background: #232323; }
+
+container hero.dark h1 {
+  color: #ffffff; }
+
+container hero.dark p {
+  color: #aaaaaa; }
+
+/* fonts */
+
+/*# sourceMappingURL=ui.css.map */
