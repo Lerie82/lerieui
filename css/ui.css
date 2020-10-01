@@ -18,7 +18,7 @@ What	this sass file processes the UI framework into the ui.css file
 container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 0.5rem; }
+  grid-gap: 0rem; }
 
 /* headers */
 /* html document */
@@ -29,12 +29,15 @@ body {
 /* navbars */
 nav {
   grid-column-start: 1;
-  grid-column-end: 13; }
+  grid-column-end: 13;
+  grid-row: 0rem;
+  padding: 0 1rem 0 0; }
 
 container nav ul {
   display: inline-flex;
   margin: 0;
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0; }
 
 container nav ul li {
   margin: 1rem; }
@@ -43,11 +46,15 @@ container nav ul li a {
   padding: 1rem; }
 
 container nav.right {
-  justify-self: right; }
+  text-align: end; }
+
+container nav.right ul li.brand {
+  position: absolute;
+  left: 3rem; }
 
 container nav ul li.brand {
   margin: 0;
-  padding: 1rem 0.5rem;
+  padding: 1rem 3rem;
   font-weight: bold; }
 
 container nav li a {
