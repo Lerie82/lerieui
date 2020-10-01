@@ -28,3 +28,8 @@ Panels hold your content, panels belong inside of sections.
 The nav HTML tag sits inside of the container tag. Some helper classes
 - .right
  - pulls the menu right
+
+### Util
+Helper classes for the masses.
+- .bg-black
+ - this creates a black background around an element, used mostly for demo purposes. 
