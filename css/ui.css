@@ -1,14 +1,20 @@
 /*
-author	 Lerie Taylor
-date	09/2020
-what	this sass file processes the UI framework into the ui.css file
+Author	 Lerie Taylor
+Date	09/2020
+What	this sass file processes the UI framework into the ui.css file
 */
-/* grid variables */
-/* htmldoc variables */
 /* import all the sass */
 /* colors */
+/* palettes */
+/* blue */
+/* grid variables */
+/* htmldoc variables */
+/* buttons */
+/* navbars */
+/* sections */
 /* footers */
 /* grid */
+@import url(../fonts/);
 container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -17,7 +23,8 @@ container {
 /* headers */
 /* html document */
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: "Roboto"; }
 
 /* navbars */
 nav {
@@ -43,6 +50,27 @@ container nav ul li.brand {
   padding: 1rem 0.5rem;
   font-weight: bold; }
 
+container nav li a {
+  color: #232323;
+  text-decoration: none;
+  margin: -1rem; }
+
+container nav li a:hover {
+  background-color: #d5d5d5;
+  color: #3d3d3d; }
+
+/* dark navbar  */
+container nav.dark ul li a {
+  color: #eeeeee;
+  text-decoration: none;
+  border: 1px;
+  padding: repeater(1rem);
+  margin: -1rem; }
+
+container nav.dark ul li a:hover {
+  background-color: #303030;
+  color: #fbfbfb; }
+
 /* panels */
 container section panel {
   grid-column-start: 1;
@@ -53,7 +81,8 @@ container section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-start: 1;
-  grid-column-end: 13; }
+  grid-column-end: 13;
+  margin: 0rem 3rem 0rem 3rem; }
 
 /* two columns */
 container section.two {
@@ -114,53 +143,78 @@ container section.four panel:last-child {
 
 /* buttons */
 button {
-  margin: 1rem;
   padding: 0.5rem;
   width: max-content;
-  border: 1px solid #dddddd;
-  border-radius: 0.3rem; }
-
-button.light {
-  background: #fdfdfd;
-  color: #9d9d9d;
-  border: 1px solid #eeeeee; }
-
-button.dark {
-  background-color: #232323;
-  color: #9c9c9c;
-  border: 1px solid #9c9c9c; }
-
-button.primary {
-  background-color: #ff0000;
-  color: #eeeeee;
-  border: 1px solid #ce0000; }
-
-button.secondary {
-  background-color: #00ff00;
-  border: 1px solid #00ce00; }
-
-button.accent {
-  background-color: #0000ff;
-  border: 1px solid #0000ce;
-  color: #eeeeee; }
+  border: 1px solid #d6d6d6;
+  color: #a3a3a3;
+  border-radius: 0.3rem;
+  box-shadow: 0px 0px 5px -4px #000, 0px 0px 4px -5px #555; }
 
 button.outline {
+  background-color: transparent; }
+
+button:hover {
+  background-color: #e1e1e1;
+  color: #303030; }
+
+/* light button */
+button.light {
+  background-color: #ffffff;
+  border: 1px solid #222222;
+  color: black; }
+
+button.light:hover {
+  background: #f7f7f7; }
+
+button.light.outline {
+  background-color: transparent; }
+
+/* dark button */
+button.dark {
+  color: #6f6f6f;
+  background-color: #303030;
+  border: 1px solid #303030;
+  box-shadow: 0px 0px 5px -4px #fff, 0px 0px 4px -5px #555; }
+
+button.dark:hover {
+  background-color: #afafaf;
+  color: #e1e1e1; }
+
+button.dark.outline {
   background: transparent; }
-
-button.outline.light {
-  background: transparent;
-  border: 1px solid #ffffff;
-  color: #ffffff; }
-
-button.outline.dark {
-  background: transparent;
-  border: 1px solid #000000;
-  color: #000000; }
 
 /* forms */
 /* utilities/helpers/etc */
 span.bg-black {
   background-color: #000000;
   padding: 1rem; }
+
+.center-text {
+  text-align: center; }
+
+/* heros */
+container hero {
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  padding: 3rem; }
+
+container hero h1 {
+  font-size: 3.5rem; }
+
+container hero p {
+  font-size: 1.2rem;
+  color: #cccccc; }
+
+container hero.dark {
+  background: #232323; }
+
+container hero.dark h1 {
+  color: #ffffff; }
+
+container hero.dark p {
+  color: #aaaaaa; }
+
+/* fonts */
 
 /*# sourceMappingURL=ui.css.map */

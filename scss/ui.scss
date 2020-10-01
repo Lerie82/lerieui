@@ -1,8 +1,11 @@
 /*
-author	 Lerie Taylor
-date	09/2020
-what	this sass file processes the UI framework into the ui.css file
+Author	 Lerie Taylor
+Date	09/2020
+What	this sass file processes the UI framework into the ui.css file
 */
+
+/* import all the sass */
+@import "colors";
 
 /* grid variables */
 $cols: 12;
@@ -10,6 +13,16 @@ $gutter: 0.5rem;
 
 /* htmldoc variables */
 $body-margin: 0;
+$body-font: "Roboto";
 
-/* import all the sass */
-@import "colors","footers","grid","headers","htmldoc","navbars","panels","sections","buttons","forms","util"
+/* buttons */
+
+/* navbars */
+$navbar-dark-color: $light;
+$navbar-dark-padding: 1rem;
+
+/* sections */
+$section-margin-left: 3rem;
+$section-margin-right: 3rem;
+
+@import "footers","grid","headers","htmldoc","navbars","panels","sections","buttons","forms","util","heros","fonts";

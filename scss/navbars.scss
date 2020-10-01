@@ -28,3 +28,28 @@ container nav ul li.brand {
     padding: 1rem 0.5rem;
     font-weight: bold;
 }
+
+container nav li a {
+    color: $dark;
+    text-decoration: none;
+    margin: -1rem;
+}
+
+container nav li a:hover {
+    background-color: darken($light, 10%);
+    color: lighten($dark, 10%);
+}
+
+/* dark navbar  */
+container nav.dark ul li a {
+    color: $navbar-dark-color;
+    text-decoration: none;
+    border: 1px;
+    padding: repeater($navbar-dark-padding);
+    margin: -1rem;
+}
+
+container nav.dark ul li a:hover {
+    background-color: lighten($dark, 5%);
+    color: lighten($light, 5%);
+}

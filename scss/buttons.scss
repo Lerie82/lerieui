@@ -1,52 +1,50 @@
 /* buttons */
 button {
-	margin:1rem;
     padding: 0.5rem;
     width: max-content;
-    border: 1px solid #dddddd;
+    border: 1px solid lighten($dark, 70%);
+    color: lighten($dark, 50%);
     border-radius: 0.3rem;
-}
-
-button.light {
-    background: #fdfdfd;
-    color: #9d9d9d;
-    border: 1px solid #eeeeee;
-}
-
-button.dark {background-color: #232323;color: #9c9c9c;border: 1px solid #9c9c9c;}
-
-body {
-}
-
-button.primary {
-    background-color: #ff0000;
-    color: #eeeeee;
-    border: 1px solid #ce0000;
-}
-
-button.secondary {
-    background-color: #00ff00;
-    border: 1px solid #00ce00;
-}
-
-button.accent {
-    background-color: #0000ff;
-    border: 1px solid #0000ce;
-    color: #eeeeee;
+    box-shadow: 0px 0px 5px -4px #000, 0px 0px 4px -5px #555;
 }
 
 button.outline {
-    background: transparent;
+    background-color: transparent;
 }
 
-button.outline.light {
-    background: transparent;
-    border: 1px solid #ffffff;
-    color: #ffffff;
+button:hover {
+    background-color: darken($light, 5%);
+    color: lighten($dark, 5%);
 }
 
-button.outline.dark {
+/* light button */
+button.light {
+    background-color: #ffffff;
+    border: 1px solid darken($light, 80%);
+    color: darken($dark, 60%);
+}
+
+button.light:hover {
+    background: #f7f7f7;
+}
+
+button.light.outline {
+    background-color: transparent;
+}
+
+/* dark button */
+button.dark {
+    color: darken($light, 50%);
+    background-color: lighten($dark, 5%);
+    border: 1px solid lighten($dark, 5%);
+    box-shadow: 0px 0px 5px -4px #fff, 0px 0px 4px -5px #555;
+}
+
+button.dark:hover {
+    background-color: lighten($dark, 55%);
+    color: darken($light, 5%);
+}
+
+button.dark.outline {
     background: transparent;
-    border: 1px solid #000000;
-    color: #000000;
 }

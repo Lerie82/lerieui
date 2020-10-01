@@ -4,6 +4,7 @@ container section {
     grid-template-columns: repeat(12, 1fr);
     grid-column-start: 1;
     grid-column-end: 13;
+    margin: 0rem $section-margin-right 0rem $section-margin-left;
 }
 
 /* two columns */
