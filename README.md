@@ -2,7 +2,7 @@
 The grid is a 12 column repeating grid
 
 ### Sections
-Sections are basically "sections" trhat you are filling with content. There are several helper classes available to align your content:
+Sections belong inside of Containers, you will fill these with Panels. There are several helper classes available to align your content:
 - .two 
   - Gives the developer two sections
 - .three
