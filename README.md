@@ -14,7 +14,11 @@ Sections are basically "sections" trhat you are filling with content. There are 
 Panels hold your content, panels belong inside of sections.
 
 ### Utilities
+Helper classes for the masses.
+
 - .center-text
+- .bg-black
+ - this creates a black background around an element, used mostly for demo purposes. 
 
 ### Colors
 
@@ -28,8 +32,3 @@ Panels hold your content, panels belong inside of sections.
 The nav HTML tag sits inside of the container tag. Some helper classes
 - .right
  - pulls the menu right
-
-### Util
-Helper classes for the masses.
-- .bg-black
- - this creates a black background around an element, used mostly for demo purposes. 
