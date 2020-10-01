@@ -13,8 +13,41 @@ What	this sass file processes the UI framework into the ui.css file
 /* navbars */
 /* sections */
 /* footers */
-/* grid */
 @import url(../fonts/);
+footer {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 3rem 0 0;
+  border-top: 1px solid #dddddd; }
+
+footer a {
+  color: #232323;
+  text-decoration: none; }
+
+footer a:hover {
+  color: #a3a3a3; }
+
+footer ul {
+  list-style-type: none;
+  font-weight: bold; }
+
+footer panel h1 {
+  margin: 1rem 0 -0.5rem; }
+
+/* dark footer */
+footer.dark {
+  background: #232323;
+  color: #eeeeee; }
+
+footer.dark a {
+  color: #eeeeee; }
+
+footer.dark a:hover {
+  color: #a2a2a2; }
+
+/* grid */
 container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

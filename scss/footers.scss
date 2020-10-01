@@ -1,1 +1,41 @@
 /* footers */
+footer {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-template-columns: repeat(4,1fr);
+    margin: 3rem 0 0;
+    border-top: 1px solid #dddddd;
+}
+
+footer a {
+    color: $dark;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: lighten($dark, 50%);
+}
+
+footer ul {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+footer panel h1 {
+    margin: 1rem 0 -0.5rem;
+}
+
+/* dark footer */
+footer.dark {
+    background: $dark;
+    color: $light;
+}
+
+footer.dark a {
+    color: $light;
+}
+
+footer.dark a:hover {
+    color: darken($light, 30%);
+}
