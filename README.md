@@ -13,8 +13,16 @@ four|Yep, there is now four panels.
 ### Panels
 Panels hold your content, panels belong inside of sections.
 
+```
+<section>
+	<panel>
+		...
+	</panel>
+</section>
+```
+
 ### Utilities
-Helper classes for the masses.
+Helper classes for fonts, colors, and other stuff.
 
 CSS Class|Notes
 ---------|-----
