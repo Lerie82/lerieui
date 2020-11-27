@@ -1,16 +1,9 @@
 ## Installing on Debian
 I have only tested this on Ubuntu 16.04 xenial LTS, in crosh. It is advised to update aptitude before running the install.sh file, if you don't want it updfated you will need to remove the first two line that update aptitude.
 
-<<<<<<< HEAD
-### Required Packages
-* zip
-* sass
-=======
 ```
 (xenial)root@localhost:/lerieui# sh install.sh
 ```
->>>>>>> 23f37c746e4013f409bbd10a9f989cae3b0291a4
-
 ### Required Packages
 * zip
 * sass
