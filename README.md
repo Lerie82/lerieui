@@ -2,8 +2,8 @@
 I have only tested this on Ubuntu 16.04 xenial LTS, in crosh. It is advised to update aptitude before running the install.sh file, if you don't want it updfated you will need to remove the first two line that update aptitude.
 
 ### Required Packages
--zip
--sass
+* zip
+* sass
 
 #$ sh install.sh
 
